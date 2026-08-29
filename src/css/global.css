@@ -3,6 +3,10 @@ main{
     grid-template-columns: auto 90vw auto;
 }
 
+section{
+    margin-top: 50px;
+}
+
 .btn-login{
     padding: 12px 30px;
     border: none;

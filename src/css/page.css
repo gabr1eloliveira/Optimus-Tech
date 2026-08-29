@@ -1,8 +1,70 @@
-/*About Intro*/
+/*About*/
 
+/*About Intro*/
 .about-intro {
   grid-column: 2;
-  padding: 50px 10px;
+  padding: 10px;
   text-align: center;
+}
 
+.about-intro__label{
+  color:var(--cor-primaria);
+  font-weight: bold;
+}
+
+.about-intro__title{
+  font-size: 2.3rem;
+  color: var(--cor-secundario);
+}
+
+.about-intro__text{
+  color: var(--cor-terciaria);
+  font-size: 1rem;
+}
+
+/*METRICA*/
+
+#metrica{
+  width: 100%;
+  grid-column: 2;
+  padding: 20px;
+}
+
+#metrica-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.metrica__item{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(128, 128, 128, 0.314);
+  border-radius: 8px;
+  padding: 10px;
+  transition: border 0.3s, transform 0.3s, box-shadow 0.6s;
+}
+
+.metrica__item:hover{
+  transform: translateX(12px);
+  border: 2px solid var(--cor-primaria);
+  box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+}
+
+.metrica__number{
+  color: var(--cor-primaria);
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.metrica__title{
+  color: var(--cor-secundario);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.metrica__description{
+  color: var(--cor-terciaria);
+  font-size: 0.9rem;
+  
 }
