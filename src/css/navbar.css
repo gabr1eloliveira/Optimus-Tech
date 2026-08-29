@@ -85,11 +85,7 @@
 		gap: 1rem;
 	}
 
-	.nav-buttons{
-		display: none;
-	}
-
-	.nav-menu{
+	.nav-menu, .nav-menu__item a::after, .nav-buttons{
 		display: none;
 	}
 
@@ -111,7 +107,7 @@
 
 	.nav-menu__mobile.active{
 		display: flex;
-		animation: menu-appear 0.2s ease-out;
+		animation: menu-appear 0.3s ease-out;
 	}
 
 	.nav-menu__mobile .nav-menu__item a{
