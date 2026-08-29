@@ -1,3 +1,8 @@
+main{
+    display: grid;
+    grid-template-columns: auto 90vw auto;
+}
+
 .btn-login{
     padding: 12px 30px;
     border: none;
