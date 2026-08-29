@@ -68,3 +68,35 @@
   font-size: 0.9rem;
   
 }
+
+/*VAGAS*/
+#vagas{
+  display: grid;
+  grid-column: 2;
+  padding: 10px 0;
+}
+
+#talentos{
+  width: 100%;
+  text-align: center;
+}
+
+.talento__label{
+  color: var(--cor-primaria);
+  font-weight: bold;
+}
+
+.talento__title{
+  color: var(--cor-secundario);
+  font-size: 2.3rem;
+}
+
+.talento__text{
+  color: var(--cor-terciaria);
+  font-size: 1rem;
+}
+
+#talentos img{
+  width: 100%;
+  padding-top: 30px;
+}
