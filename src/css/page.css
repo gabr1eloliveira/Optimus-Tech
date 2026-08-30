@@ -104,23 +104,45 @@
 /*VAGAS ABERTAS*/
 
 #vagas-abertas{
-
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .areas-vagas{
   display: grid;
   background-color: rgba(128, 128, 128, 0.405);
   padding: 20px;
-  gap: 30px;
+  gap: 20px;
+  border-radius: 9px;
+}
+
+.area-vagas__title{
+  color: var(--cor-secundario);
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .vagas-item{
   padding: 15px;
   border-radius: 9px;
-  background-color: rgb(195, 191, 191);
-  transition: background-color 0.2s;
+  background-color: rgb(244, 244, 244);
+  box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.1);
+  transition: background-color 0.2s, transform 0.3s, box-shadow ;
 }
 
 .vagas-item:hover{
   background-color: rgb(228, 226, 226);
+  transform: translateY(-2px);
+}
+
+.vagas__nome{
+  color: black;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.vagas__description{
+  color: var(--cor-terciaria);
+  font-size: 0.9rem;
 }
