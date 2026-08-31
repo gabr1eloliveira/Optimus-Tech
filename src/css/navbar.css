@@ -2,6 +2,10 @@
 	width: 100%;
     min-height: 80px;
     padding: 16px 40px;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	background-color: white;
 }
 
 .nav-container {
