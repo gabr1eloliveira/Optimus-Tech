@@ -162,3 +162,11 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/*DEPOIMENTOS*/
+
+#depoimento{
+  grid-column: 2;
+  padding: 10px;
+  text-align: center;
+}
