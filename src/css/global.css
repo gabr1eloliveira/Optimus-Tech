@@ -2,6 +2,7 @@ main{
     display: grid;
     grid-template-columns: auto 90vw auto;
     margin-top: 80px;
+    padding: 10px;
 }
 
 section{
