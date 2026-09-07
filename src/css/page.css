@@ -4,6 +4,11 @@
 .about-intro {
   grid-column: 2;
   padding: 10px;
+}
+
+#about-intro__container{
+  display: grid;
+  gap: 10px;
   text-align: center;
 }
 
@@ -20,6 +25,18 @@
 .about-intro__text{
   color: var(--cor-terciaria);
   font-size: 1rem;
+}
+
+@media screen and (min-width:1280px) {
+
+    .about-intro{
+      display: grid;
+      grid-template-columns: auto 60vw auto
+    }
+    #about-intro__container{
+      grid-column: 2;
+      gap: 20px;
+    }
 }
 
 /*METRICA*/
@@ -113,7 +130,15 @@
 
 #talentos img{
   width: 100%;
-  padding-top: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width:1280px) {
+  
+  #talentos img{
+    width: 70%;
+  }
 }
 
 /*VAGAS ABERTAS*/
@@ -194,19 +219,26 @@
   text-align: center;
   background-color: var(--cor-fundo);
   border-radius: 9px;
+  min-height: 300px;
+}
+
+#depoimento-container{
+  display: grid;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
 }
 
 .depoimento__label{
   color: var(--cor-primaria);
   font-weight: 600;
-  margin-bottom: 10px;
 }
 
 .depoimento__title{
   color: var(--cor-secundario);
   font-weight: bold;
   font-size: 1.4rem;
-  margin-bottom: 20px;
 }
 
 .depoimento__nome{
@@ -218,3 +250,34 @@
   color: var(--cor-terciaria);
   font-size: 0.9rem;
 }
+
+@media screen and (min-width:768px) {
+  #depoimento{
+    display: grid;
+    grid-template-columns: auto 800px auto;
+    min-height: 300px;
+  }
+
+  #depoimento-container{
+    grid-column: 2;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  #depoimento{
+    display: grid;
+    grid-template-columns: auto 800px auto;
+    min-height: 300px;
+  }
+
+  #depoimento-container{
+    grid-column: 2;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
