@@ -168,16 +168,20 @@
 
 /*TABLET*/
 @media screen and (min-width:768px) {
-  .areas-vagas{
-    flex-direction: row;
-    flex-wrap: wrap;
+  #vagas-abertas{
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 /*PC*/
 @media screen and (min-width:1280px) {
-  #metrica-container{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  #vagas-abertas{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .areas-vagas{
+    flex-direction: column;
   }
   
 }
