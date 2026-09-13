@@ -54,6 +54,7 @@ footer{
     padding: 10px;
     border-radius: 9px;
     border: 1px solid var(--cor-terciaria);
+    width: 20%;
     min-width: 240px;
 }
 
@@ -86,3 +87,4 @@ footer{
     font-size: 0.9rem;
     margin-top: 10px;
 }
+
