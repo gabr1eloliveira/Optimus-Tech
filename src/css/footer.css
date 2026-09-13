@@ -27,14 +27,14 @@ footer{
 .footer-social{
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 10px;
 }
 
 .footer-social__icon i{
     text-decoration: none;
     color: var(--cor-terciaria);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     transition: color 0.2s ease, transform 0.2s ease;
 }
 
@@ -88,3 +88,6 @@ footer{
     margin-top: 10px;
 }
 
+@media screen and (min-width: 1280px){
+    
+}
