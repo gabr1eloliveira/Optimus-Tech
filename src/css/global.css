@@ -62,7 +62,7 @@ section{
     text-decoration: none;
     color: white;
     font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .btn-comecar-gratis:hover{
@@ -71,21 +71,23 @@ section{
 }
 
 .btn-ver-produto{
-    padding: 12px 30px;
+    padding: 15px 10px;
     border: none;
     border-radius: 9px;
     cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    border: 1px solid rgba(128, 128, 128, 0.336);
+    background-color: transparent;
+    transition: border 0.2s ease-in-out, transform 0.2s ease;
 }
 
 .btn-ver-produto a{
     text-decoration: none;
     color: var(--cor-terciaria);
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 .btn-ver-produto:hover {
-    background-color: rgba(128, 128, 128, 0.336);
+    border: 1px solid white;
     transform: translateY(-1px);
 }

@@ -2,11 +2,17 @@
 #home-into{
   grid-column: 1/4;
   background-image: url(../imagens/background-home.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-top: 0;
   padding: 20px;
 }
 
 #home-into__container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   min-height: 400px;
   text-align: left;
 }
@@ -17,6 +23,8 @@
   padding: 5px;
   border-radius: 7px;
   font-weight: 600;
+  width: 220px;
+  min-width: 220px;
 }
 
 .home-into__title{
@@ -27,6 +35,7 @@
 .home-into__text{
   color: var(--cor-terciaria);
   font-weight: normal;
+  font-size: 0.9rem;
 }
 
 #home-into__buttons{
