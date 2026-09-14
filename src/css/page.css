@@ -2,8 +2,37 @@
 #home-into{
   grid-column: 1/4;
   background-image: url(../imagens/background-home.jpg);
+  margin-top: 0;
+  padding: 20px;
 }
 
+#home-into__container{
+  min-height: 400px;
+  text-align: left;
+}
+
+.home-into__label{
+  color: var(--cor-primaria);
+  background-color: rgba(255, 0, 0, 0.131);
+  padding: 5px;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+.home-into__title{
+  color: white;
+  font-size: 2.1rem;
+}
+
+.home-into__text{
+  color: var(--cor-terciaria);
+  font-weight: normal;
+}
+
+#home-into__buttons{
+  display: flex;
+  gap: 20px;
+}
 
 /*About Intro*/
 .about-intro {
