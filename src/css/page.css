@@ -29,7 +29,7 @@
 
 .home-into__title{
   color: white;
-  font-size: 2.1rem;
+  font-size: 2rem;
 }
 
 .home-into__text{
@@ -42,6 +42,48 @@
   display: flex;
   gap: 20px;
 }
+
+/*COMO FUNCIONA*/
+#como-funciona{
+  grid-column: 2;
+  padding: 20px;
+}
+
+#como-funciona__container{
+  display: grid;
+  grid-template-columns: ;
+}
+
+#como-funciona__content{
+  grid-column: ;
+  text-align: center;
+}
+
+.como-funciona__label{
+  color: var(--cor-primaria);
+  font-weight: bold;
+}
+
+.como-funciona__title{
+  font-size: 2rem;
+  color: var(--cor-secundario);
+}
+
+#como-funciona__metrica{
+  grid-column: ;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.como-funciona__item{
+  border: 2px solid rgba(128, 128, 128, 0.326);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.como
+
 
 /*About Intro*/
 .about-intro {
