@@ -1,4 +1,9 @@
-/*About*/
+/*HOME*/
+#home-into{
+  grid-column: 1/4;
+  background-image: url(../imagens/background-home.jpg);
+}
+
 
 /*About Intro*/
 .about-intro {
