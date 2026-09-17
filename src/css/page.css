@@ -46,16 +46,16 @@
 /*COMO FUNCIONA*/
 #como-funciona{
   grid-column: 2;
-  padding: 20px;
+  padding: 10px;
 }
 
 #como-funciona__container{
   display: grid;
-  grid-template-columns: ;
+  
 }
 
 #como-funciona__content{
-  grid-column: ;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -70,20 +70,42 @@
 }
 
 #como-funciona__metrica{
-  grid-column: ;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
 }
 
 .como-funciona__item{
   border: 2px solid rgba(128, 128, 128, 0.326);
   padding: 10px;
   border-radius: 8px;
+  transition: border 0.2s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.como
+.como-funciona__item:hover{
+  transform: translateY(-2px);
+  border: 2px solid var(--cor-primaria);
+}
 
+.como-funciona-item__number{
+  color: var(--cor-primaria);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.como-funciona-item__title{
+  color: var(--cor-secundario);
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.como-funciona-item__text{
+  color: var(--cor-terciaria);
+  font-weight: normal;
+  font-size: 0.9rem;
+}
 
 /*About Intro*/
 .about-intro {
