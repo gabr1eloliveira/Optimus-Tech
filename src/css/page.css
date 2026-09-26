@@ -61,7 +61,6 @@
 
 .como-funciona__label{
   color: var(--cor-primaria);
-  font-weight: bold;
 }
 
 .como-funciona__title{
@@ -107,6 +106,33 @@
   font-weight: normal;
   font-size: 0.9rem;
 }
+
+/*NOSSA MISSAO*/
+.nossa-missao{
+  grid-column: 2;
+}
+
+.nossa-missao__container{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+}
+
+.nossa-missao__label{
+  color: var(--cor-primaria);
+}
+
+.nossa-missao__title{
+  color: var(--cor-secundario);
+  font-size: 2rem;
+}
+
+.nossa-missao__text{
+  color: var(--cor-terciaria);
+}
+
+
 
 /*About Intro*/
 .about-intro {
