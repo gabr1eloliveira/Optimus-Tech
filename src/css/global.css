@@ -8,27 +8,7 @@ section{
     margin-top: 50px;
 }
 
-.btn-login{
-    padding: 12px 30px;
-    border: none;
-    border-radius: 9px;
-    cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
-}
-
-.btn-login a{
-    text-decoration: none;
-    color: var(--cor-terciaria);
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.btn-login:hover {
-    background-color: rgba(128, 128, 128, 0.336);
-    transform: translateY(-1px);
-}
-
-.btn-singup{
+.btn-primary{
     padding: 12px 40px;
     border-radius: 9px;
     border: none;
@@ -37,40 +17,19 @@ section{
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.btn-singup a{
+.btn-primary a{
     text-decoration: none;
     color: white;
     font-size: 1rem;
     font-weight: 500;
 }
 
-.btn-singup:hover {
+.btn-primary:hover {
     background-color: var(--cor-secundario);
     transform: translateY(-1px);
 }
 
-.btn-comecar-gratis{
-    padding: 15px 10px;
-    border-radius: 9px;
-    border: none;
-    cursor: pointer;
-    background-color: var(--cor-primaria);
-    transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.btn-comecar-gratis a{
-    text-decoration: none;
-    color: white;
-    font-size: 0.8rem;
-    font-weight: bold;
-}
-
-.btn-comecar-gratis:hover{
-    background-color: var(--cor-secundario);
-    transform: translateY(-1px);
-}
-
-.btn-ver-produto{
+.btn-secondary{
     padding: 15px 10px;
     border: none;
     border-radius: 9px;
@@ -80,14 +39,14 @@ section{
     transition: border 0.2s ease-in-out, transform 0.2s ease;
 }
 
-.btn-ver-produto a{
+.btn-secondary a{
     text-decoration: none;
     color: var(--cor-terciaria);
     font-size: 0.8rem;
     font-weight: bold;
 }
 
-.btn-ver-produto:hover {
+.btn-secondary:hover {
     border: 1px solid white;
     transform: translateY(-1px);
 }
