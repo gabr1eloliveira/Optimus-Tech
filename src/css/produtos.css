@@ -1,0 +1,28 @@
+.produto-section{
+    grid-column: 2;
+}
+
+.produto-container{
+    width: 100%;
+}
+
+.produto-content{
+    text-align: center;
+}
+
+.produto-into__label{
+    color: var(--cor-primaria);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.produto-into__title{
+    font-size: 1.7rem;
+    color: var(--cor-secundario);
+    margin-bottom: 0.5rem;
+}
+
+.produto-into__text{
+    font-size: 0.9rem;
+    color: var(--cor-terciaria);
+}
