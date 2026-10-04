@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Optimus Tech</title>
+    <title>Cadastrar - Optimus Tech</title>
     <link rel="icon" type="image/png" href="src/imagens/worldwide 1 (Traced).png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/global.css">
     <link rel="stylesheet" href="src/css/navbar.css">
     <link rel="stylesheet" href="src/css/footer.css">
-    <link rel="stylesheet" href="src/css/login.css">
+    <link rel="stylesheet" href="src/css/cadastro.css">
 </head>
 <body>
     <header class="navbar">
@@ -46,19 +46,27 @@
         </div>
     </header>
 
-    <main class="login-main">
-        <section class="login-section">
-            <div class="login-container">
-                <div class="login-card">
-                    <div class="login-header">
-                        <span class="login-label">BEM-VINDO DE VOLTA</span>
-                        <h1 class="login-title">Acesse sua conta</h1>
-                        <p class="login-subtitle">Entre com suas credenciais para continuar na Optimus Tech.</p>
+    <main class="cadastro-main">
+        <section class="cadastro-section">
+            <div class="cadastro-container">
+                <div class="cadastro-card">
+                    <div class="cadastro-header">
+                        <span class="cadastro-label">CRIE SUA CONTA</span>
+                        <h1 class="cadastro-title">Junte-se à Optimus Tech</h1>
+                        <p class="cadastro-subtitle">Preencha os campos abaixo para começar a usar a plataforma.</p>
                     </div>
 
-                    <form class="login-form" action="#" method="POST">
+                    <form id="cadastro-form" class="cadastro-form" action="#" method="POST">
                         <div class="form-group">
-                            <label for="email">E-mail</label>
+                            <label for="nome">Nome Completo</label>
+                            <div class="input-wrapper">
+                                <i class="fa-regular fa-user input-icon"></i>
+                                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail corporativo</label>
                             <div class="input-wrapper">
                                 <i class="fa-regular fa-envelope input-icon"></i>
                                 <input type="email" id="email" name="email" placeholder="seuemail@empresa.com" required>
@@ -66,39 +74,34 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="password">Senha</label>
+                            <label for="senha">Senha</label>
                             <div class="input-wrapper">
                                 <i class="fa-solid fa-lock input-icon"></i>
-                                <input type="password" id="password" name="password" placeholder="••••••••" required>
+                                <input type="password" id="senha" name="senha" placeholder="••••••••" required>
                             </div>
                         </div>
 
-                        <div class="login-options">
-                            <label class="remember-me">
-                                <input type="checkbox" id="remember">
-                                <span>Lembrar de mim</span>
+                        <div class="form-group">
+                            <label for="confirmar-senha">Confirmar Senha</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-lock input-icon"></i>
+                                <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="••••••••" required>
+                            </div>
+                            <span id="password-error" class="error-message">As senhas não coincidem.</span>
+                        </div>
+
+                        <div class="terms-group">
+                            <label class="terms-label">
+                                <input type="checkbox" id="terms" required>
+                                <span>Li e aceito os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a></span>
                             </label>
-                            <a href="#" class="forgot-password">Esqueceu a senha?</a>
                         </div>
 
-                        <button type="submit" class="login-btn">Entrar</button>
-
-                        <div class="login-divider">
-                            <span>ou entre com</span>
-                        </div>
-
-                        <div class="social-login">
-                            <button type="button" class="btn-social">
-                                <i class="fa-brands fa-google"></i> Google
-                            </button>
-                            <button type="button" class="btn-social">
-                                <i class="fa-brands fa-github"></i> GitHub
-                            </button>
-                        </div>
+                        <button type="submit" class="cadastro-btn">Criar minha conta</button>
                     </form>
 
-                    <div class="login-footer">
-                        <p>Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se gratuitamente</a></p>
+                    <div class="cadastro-footer">
+                        <p>Já possui uma conta? <a href="login.html">Fazer login</a></p>
                     </div>
                 </div>
             </div>
@@ -123,5 +126,6 @@
         </div>
     </footer>
     <script src="src/script/navbar.js"></script>
+    <script src="src/script/cadastro.js"></script>
 </body>
 </html>
