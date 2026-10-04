@@ -6,7 +6,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 0;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 #home-into__container{
@@ -15,7 +15,21 @@
   gap: 20px;
   min-height: 350px;
   text-align: left;
+  max-width: 550px;
+  margin-left: 30px;
 }
+
+@media screen and (min-width: 768px) {
+  #home-into {
+    padding: 60px 40px;
+  }
+
+  #home-into__container {
+    max-width: 600px;
+    margin-left: 60px;
+  }
+}
+
 
 .home-into__label{
   color: var(--cor-primaria);
@@ -41,7 +55,7 @@
 #home-into__buttons{
     display: flex;
     gap: 10px;
-}
+  }
 
 /*COMO FUNCIONA*/
 #como-funciona{
@@ -107,30 +121,88 @@
   font-size: 0.9rem;
 }
 
+@media screen and (min-width: 768px) {
+  #como-funciona__metrica {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .como-funciona__item {
+    flex: 0 1 calc(50% - 20px);
+    max-width: 450px;
+    text-align: center;
+  }
+}
+
+
 /*NOSSA MISSAO*/
-.nossa-missao{
+.nossa-missao {
   grid-column: 2;
 }
 
-.nossa-missao__container{
+.nossa-missao__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 24px;
   padding: 10px;
   text-align: center;
 }
 
-.nossa-missao__label{
-  color: var(--cor-primaria);
+.nossa-missao-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
-.nossa-missao__title{
+.nossa-missao__label {
+  color: var(--cor-primaria);
+  font-weight: 600;
+}
+
+.nossa-missao__title {
   color: var(--cor-secundario);
   font-size: 2rem;
 }
 
-.nossa-missao__text{
+.nossa-missao__text {
   color: var(--cor-terciaria);
+  line-height: 1.6;
 }
+
+#nossa-missao-img {
+  width: 100%;
+}
+
+.nossa-missao__img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .nossa-missao__container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+  }
+
+  .nossa-missao-content {
+    flex: 1;
+    align-items: flex-start;
+  }
+
+  #nossa-missao-img {
+    flex: 1;
+  }
+}
+
 
 
 
