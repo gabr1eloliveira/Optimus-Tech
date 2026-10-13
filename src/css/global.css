@@ -60,3 +60,141 @@ section{
         padding: 15px 40px;
     }
 }
+
+@property --border-progress {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes trace-border {
+    0% {
+        --border-progress: 0deg;
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        --border-progress: 360deg;
+        opacity: 0;
+    }
+}
+
+.login-card,
+.cadastro-card {
+    position: relative;
+    isolation: isolate;
+}
+
+.login-card::after,
+.cadastro-card::after,
+.login-card .input-wrapper::after,
+.cadastro-card .input-wrapper::after,
+.login-card .login-btn::after,
+.login-card .btn-social::after,
+.cadastro-card .cadastro-btn::after,
+.cadastro-card .terms-label::after {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    padding: 2px;
+    border-radius: inherit;
+    background: conic-gradient(
+        from -90deg,
+        var(--cor-primaria) 0deg var(--border-progress),
+        transparent var(--border-progress) 360deg
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+    animation: trace-border 1.2s ease-out var(--border-delay, 0s) forwards;
+}
+
+.login-card::after,
+.cadastro-card::after {
+    inset: -1px;
+}
+
+.login-card .input-wrapper,
+.cadastro-card .input-wrapper,
+.login-card .login-btn,
+.login-card .btn-social,
+.cadastro-card .cadastro-btn,
+.cadastro-card .terms-label {
+    position: relative;
+}
+
+.login-card .input-wrapper::after,
+.cadastro-card .input-wrapper::after {
+    border-radius: 9px;
+}
+
+.login-card .login-btn,
+.login-card .btn-social,
+.cadastro-card .cadastro-btn {
+    border: 1px solid var(--cor-primaria);
+}
+
+.login-card .btn-social {
+    border-color: rgba(128, 128, 128, 0.35);
+}
+
+.cadastro-card .terms-label {
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 9px;
+}
+
+.login-form .form-group:nth-child(1) .input-wrapper::after,
+.cadastro-form .form-group:nth-child(1) .input-wrapper::after {
+    --border-delay: 0.15s;
+}
+
+.login-form .form-group:nth-child(2) .input-wrapper::after,
+.cadastro-form .form-group:nth-child(2) .input-wrapper::after {
+    --border-delay: 0.3s;
+}
+
+.cadastro-form .form-group:nth-child(3) .input-wrapper::after {
+    --border-delay: 0.45s;
+}
+
+.cadastro-form .form-group:nth-child(4) .input-wrapper::after {
+    --border-delay: 0.6s;
+}
+
+.login-card .login-btn::after,
+.cadastro-card .terms-label::after {
+    --border-delay: 0.5s;
+}
+
+.login-card .btn-social:nth-child(1)::after {
+    --border-delay: 0.65s;
+}
+
+.login-card .btn-social:nth-child(2)::after {
+    --border-delay: 0.8s;
+}
+
+.cadastro-card .cadastro-btn::after {
+    --border-delay: 0.75s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .login-card::after,
+    .cadastro-card::after,
+    .login-card .input-wrapper::after,
+    .cadastro-card .input-wrapper::after,
+    .login-card .login-btn::after,
+    .login-card .btn-social::after,
+    .cadastro-card .cadastro-btn::after,
+    .cadastro-card .terms-label::after {
+        animation: none;
+        opacity: 0;
+    }
+}

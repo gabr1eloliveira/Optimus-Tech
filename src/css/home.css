@@ -1,7 +1,7 @@
 /*HOME*/
 #home-into{
   grid-column: 1/4;
-  background-image: url(../imagens/background-home.jpg);
+  background-image: url(../assent/imagens/background-home.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
