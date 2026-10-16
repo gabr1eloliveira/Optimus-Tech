@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos - Optimus Tech</title>
+    <link rel="icon" type="image/png" href="../assent/icons/worldwide 1 (Traced).png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/recursos.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../assent/icons/worldwide 1 (Traced).png" alt="Logo da Optimus Tech"> Optimus Tech
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-menu__item"><a href="../../index.html">Home</a></li>
+                    <li class="nav-menu__item"><a href="produto.html">Produtos</a></li>
+                    <li class="nav-menu__item"><a href="recursos.html" class="active">Recursos</a></li>
+                    <li class="nav-menu__item"><a href="sobre-nos.html">Sobre Nós</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <button class="btn-secondary"><a href="login.html">Entrar</a></button>
+                <button class="btn-primary"><a href="cadastro.html">Cadastrar</a></button>
+            </div>
+
+            <div class="nav-menu__btn" role="button" tabindex="0" aria-label="Abrir menu" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </div>
+            
+            <ul class="nav-menu__mobile">
+                <li class="nav-menu__item"><a href="../../index.html">Home</a></li>
+                <li class="nav-menu__item"><a href="produto.html">Produtos</a></li>
+                <li class="nav-menu__item"><a href="recursos.html" class="active">Recursos</a></li>
+                <li class="nav-menu__item"><a href="sobre-nos.html">Sobre Nós</a></li>
+                <button class="btn-secondary"><a href="login.html">Entrar</a></button>
+                <button class="btn-primary"><a href="cadastro.html">Cadastrar</a></button>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO / INTRO DOS RECURSOS -->
+        <section class="recursos-intro">
+            <div id="recursos-intro__container">
+                <span class="recursos-intro__label">CENTRAL DE CONHECIMENTO</span>
+                <h1 class="recursos-intro__title">Recursos e ferramentas para impulsionar a sua operação</h1>
+                <p class="recursos-intro__text">Explore nossa biblioteca de artigos, guias educativos, templates operacionais e ferramentas gratuitas para elevar o nível da sua equipe.</p>
+                
+                <!-- BARRA DE PESQUISA RÁPIDA -->
+                <div class="recursos-search">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="search-resources" placeholder="Pesquisar artigos, planilhas, guias ou dúvidas..." aria-label="Pesquisar recursos">
+                </div>
+
+                <div class="recursos-quicklinks">
+                    <span>Atalhos rápidos:</span>
+                    <a href="#biblioteca">Biblioteca de Artigos</a>
+                    <a href="#ferramentas">Calculadora & Ferramentas</a>
+                    <a href="#faq">Perguntas Frequentes</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 1: BIBLIOTECA DE CONHECIMENTO (ARTIGOS, EBOOKS, TEMPLATES) -->
+        <section id="biblioteca" class="biblioteca-section">
+            <div class="section-header">
+                <span class="section-badge">BIBLIOTECA & CONTEÚDOS</span>
+                <h2 class="section-title">Artigos, guias práticos e materiais para download</h2>
+                <p class="section-subtitle">Conteúdo curado por especialistas em gestão, engenharia de software e liderança de times remotos.</p>
+            </div>
+
+            <!-- FILTRO POR CATEGORIAS -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="todos">Todos</button>
+                <button class="filter-btn" data-category="artigos">Artigos & Guias</button>
+                <button class="filter-btn" data-category="ebooks">E-books</button>
+                <button class="filter-btn" data-category="templates">Templates & Planilhas</button>
+                <button class="filter-btn" data-category="cases">Cases de Sucesso</button>
+            </div>
+
+            <!-- GRID DE MATERIAIS -->
+            <div class="recursos-grid">
+                <!-- CARD 1 -->
+                <article class="recurso-card" data-category="artigos">
+                    <div class="recurso-card__media">
+                        <span class="recurso-badge badge-artigo">Artigo</span>
+                        <div class="media-icon"><i class="fa-solid fa-newspaper"></i></div>
+                    </div>
+                    <div class="recurso-card__body">
+                        <div class="recurso-card__meta">
+                            <span><i class="fa-regular fa-clock"></i> 6 min de leitura</span>
+                            <span>• Gestão Ágil</span>
+                        </div>
+                        <h3 class="recurso-card__title">Como implementar rituais ágeis em times 100% remotos</h3>
+                        <p class="recurso-card__desc">Aprenda a estruturar dailies assíncronas, planejamentos de sprint e retrospectivas sem sobrecarregar a agenda do time.</p>
+                        <div class="recurso-card__footer">
+                            <a href="#" class="recurso-link">Ler artigo completo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 2 -->
+                <article class="recurso-card" data-category="ebooks">
+                    <div class="recurso-card__media">
+                        <span class="recurso-badge badge-ebook">E-book Gratuito</span>
+                        <div class="media-icon"><i class="fa-solid fa-book-open"></i></div>
+                    </div>
+                    <div class="recurso-card__body">
+                        <div class="recurso-card__meta">
+                            <span><i class="fa-solid fa-file-pdf"></i> PDF de 38 págs</span>
+                            <span>• People Analytics</span>
+                        </div>
+                        <h3 class="recurso-card__title">O Guia Estratégico de Indicadores de RH para 2026</h3>
+                        <p class="recurso-card__desc">Entenda como mensurar eNPS, turnover voluntário, custo por contratação e produtividade com dados confiáveis.</p>
+                        <div class="recurso-card__footer">
+                            <a href="#" class="recurso-link">Baixar e-book grátis ↓</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 3 -->
+                <article class="recurso-card" data-category="templates">
+                    <div class="recurso-card__media">
+                        <span class="recurso-badge badge-template">Template</span>
+                        <div class="media-icon"><i class="fa-solid fa-table-cells"></i></div>
+                    </div>
+                    <div class="recurso-card__body">
+                        <div class="recurso-card__meta">
+                            <span><i class="fa-solid fa-download"></i> Planilha + Notion</span>
+                            <span>• Operações</span>
+                        </div>
+                        <h3 class="recurso-card__title">Matriz RACI para Definição Clara de Responsabilidades</h3>
+                        <p class="recurso-card__desc">Modelo pronto para preenchimento que elimina conflitos de alinhamento e deixa claro quem executa, aprova e acompanha cada entrega.</p>
+                        <div class="recurso-card__footer">
+                            <a href="#" class="recurso-link">Acessar template ↓</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 4 -->
+                <article class="recurso-card" data-category="artigos">
+                    <div class="recurso-card__media">
+                        <span class="recurso-badge badge-artigo">Artigo</span>
+                        <div class="media-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    </div>
+                    <div class="recurso-card__body">
+                        <div class="recurso-card__meta">
+                            <span><i class="fa-regular fa-clock"></i> 8 min de leitura</span>
+                            <span>• Compliance</span>
+                        </div>
+                        <h3 class="recurso-card__title">Checklist LGPD: Como adequar o fluxo de dados dos colaboradores</h3>
+                        <p class="recurso-card__desc">Um passo a passo prático para garantir que o armazenamento de documentos, feedbacks e acessos respeite a legislação vigente.</p>
+                        <div class="recurso-card__footer">
+                            <a href="#" class="recurso-link">Ler artigo completo →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 5 -->
+                <article class="recurso-card" data-category="cases">
+                    <div class="recurso-card__media">
+                        <span class="recurso-badge badge-case">Case de Sucesso</span>
+                        <div class="media-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    </div>
+                    <div class="recurso-card__body">
+                        <div class="recurso-card__meta">
+                            <span><i class="fa-regular fa-clock"></i> 5 min de leitura</span>
+                            <span>• LogBrasil</span>
+                        </div>
+                        <h3 class="recurso-card__title">Como a LogBrasil reduziu o tempo de onboarding de 14 para 3 dias</h3>
+                        <p class="recurso-card__desc">Descubra como a consolidação de processos em um único ecossistema gerou 42% a mais de produtividade nos primeiros 30 dias.</p>
+                        <div class="recurso-card__footer">
+                            <a href="#" class="recurso-link">Ver história completa →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 6 -->
+                <article class="recurso-card" data-category="templates">
+                    <div class="recurso-card__media">
+                        <span class="recurso-badge badge-template">Template</span>
+                        <div class="media-icon"><i class="fa-solid fa-list-check"></i></div>
+                    </div>
+                    <div class="recurso-card__body">
+                        <div class="recurso-card__meta">
+                            <span><i class="fa-solid fa-download"></i> Checklist Completo</span>
+                            <span>• Gestão de Pessoas</span>
+                        </div>
+                        <h3 class="recurso-card__title">Kit de Integração e Rampa de Sucesso 30-60-90 Dias</h3>
+                        <p class="recurso-card__desc">Roteiro completo de alinhamento de expectativas, metas e pontos de contato para os primeiros três meses de novos membros.</p>
+                        <div class="recurso-card__footer">
+                            <a href="#" class="recurso-link">Acessar template ↓</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- MENSAGEM CASO NENHUM ITEM SEJA ENCONTRADO NA BUSCA -->
+            <div id="no-results-msg" class="no-results" style="display: none;">
+                <i class="fa-regular fa-folder-open"></i>
+                <p>Nenhum recurso encontrado para os termos pesquisados.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: FERRAMENTAS GRATUITAS -->
+        <section id="ferramentas" class="ferramentas-section">
+            <div class="section-header">
+                <span class="section-badge">UTILITÁRIOS INTERATIVOS</span>
+                <h2 class="section-title">Ferramentas gratuitas para calcular e planejar</h2>
+                <p class="section-subtitle">Simule ganhos de produtividade e descubra onde sua operação pode economizar tempo precioso hoje mesmo.</p>
+            </div>
+
+            <!-- CALCULADORA INTERATIVA DE PRODUTIVIDADE -->
+            <div class="calc-wrapper">
+                <div class="calc-card">
+                    <div class="calc-inputs">
+                        <div class="calc-badge"><i class="fa-solid fa-calculator"></i> Simulador em Tempo Real</div>
+                        <h3 class="calc-title">Calculadora de Economia de Tempo & Produtividade</h3>
+                        <p class="calc-desc">Insira o tamanho da sua equipe e veja quanto tempo e dinheiro são desperdiçados com tarefas manuais e ferramentas desintegradas.</p>
+
+                        <div class="calc-field">
+                            <label for="calc-colabs">
+                                <span>Número de colaboradores na empresa:</span>
+                                <span class="calc-field-hint">(Ex: 15)</span>
+                            </label>
+                            <div class="calc-input-box">
+                                <i class="fa-solid fa-users"></i>
+                                <input type="number" id="calc-colabs" min="1" max="1000" value="20">
+                            </div>
+                        </div>
+
+                        <div class="calc-field">
+                            <label for="calc-horas">
+                                <span>Horas gastas por colaborador/semana em burocracias & planilhas:</span>
+                                <span class="calc-field-hint">(Média do mercado: 6h)</span>
+                            </label>
+                            <div class="calc-input-box">
+                                <i class="fa-regular fa-clock"></i>
+                                <input type="number" id="calc-horas" min="1" max="40" value="6">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc-results">
+                        <h4 class="results-header">Impacto com a Optimus Tech:</h4>
+                        
+                        <div class="result-metric">
+                            <span class="metric-label">Tempo economizado por mês</span>
+                            <span id="result-horas" class="metric-number">312h</span>
+                            <span class="metric-note">Horas liberadas para projetos de valor real</span>
+                        </div>
+
+                        <div class="result-metric">
+                            <span class="metric-label">Economia financeira estimada/mês</span>
+                            <span id="result-economia" class="metric-number highlight">R$ 14.040</span>
+                            <span class="metric-note">Considerando custo médio de hora produtiva</span>
+                        </div>
+
+                        <div class="result-metric">
+                            <span class="metric-label">Aumento estimado de eficiência</span>
+                            <span id="result-eficiencia" class="metric-number">+48%</span>
+                            <span class="metric-note">Velocidade nas entregas operacionais</span>
+                        </div>
+
+                        <a href="cadastro.html" class="btn-calc-cta">Começar a economizar agora →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARDS DE OUTRAS FERRAMENTAS GRATUITAS -->
+            <div class="ferramentas-cards-grid">
+                <div class="ferramenta-card">
+                    <div class="ferramenta-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h4 class="ferramenta-card__title">Diagnóstico de Maturidade Operacional</h4>
+                    <p class="ferramenta-card__text">Responda a 10 perguntas e receba um relatório personalizado com os principais gargalos e oportunidades do seu negócio.</p>
+                    <a href="cadastro.html" class="ferramenta-card__link">Iniciar Diagnóstico Online →</a>
+                </div>
+
+                <div class="ferramenta-card">
+                    <div class="ferramenta-icon"><i class="fa-solid fa-file-pen"></i></div>
+                    <h4 class="ferramenta-card__title">Gerador de Descrição de Vagas (JD)</h4>
+                    <p class="ferramenta-card__text">Crie anúncios de vagas atrativos e profissionais com base em modelos comprovados do setor de tecnologia e serviços.</p>
+                    <a href="cadastro.html" class="ferramenta-card__link">Gerar Anúncio de Vaga →</a>
+                </div>
+
+                <div class="ferramenta-card">
+                    <div class="ferramenta-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h4 class="ferramenta-card__title">Calculadora de Custo de Turnover</h4>
+                    <p class="ferramenta-card__text">Calcule o impacto real de desligamentos e substituições na sua folha e entenda como reter seus melhores talentos.</p>
+                    <a href="cadastro.html" class="ferramenta-card__link">Calcular Impacto de Turnover →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: PERGUNTAS FREQUENTES (FAQ) -->
+        <section id="faq" class="faq-section">
+            <div class="section-header">
+                <span class="section-badge">TIRE SUAS DÚVIDAS</span>
+                <h2 class="section-title">Perguntas Frequentes (FAQ)</h2>
+                <p class="section-subtitle">Tudo o que você precisa saber sobre a Optimus Tech, contratação, segurança e implementação.</p>
+            </div>
+
+            <div class="faq-accordion">
+                <!-- ITEM 1 -->
+                <div class="faq-item active">
+                    <button class="faq-question" aria-expanded="true">
+                        <span>Como funciona o período de teste gratuito? Preciso cadastrar cartão?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nosso teste gratuito é 100% livre de riscos: você tem <strong>14 dias de acesso completo</strong> a todos os módulos da plataforma (Projetos, Analytics, RH e Comunicação) <strong>sem precisar cadastrar nenhum cartão de crédito</strong>. Ao término do período, você pode optar por um de nossos planos ou continuar utilizando os recursos essenciais do plano gratuito.</p>
+                    </div>
+                </div>
+
+                <!-- ITEM 2 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>A plataforma está em conformidade com a LGPD? Onde ficam os dados?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! A Optimus Tech cumpre integralmente os requisitos da Lei Geral de Proteção de Dados (LGPD). Todos os dados são trafegados via criptografia TLS 1.3 e armazenados em repouso com algoritmo AES-256 em data centers com certificação ISO 27001 e SOC 2, garantindo máxima privacidade e segurança institucional.</p>
+                    </div>
+                </div>
+
+                <!-- ITEM 3 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Como realizo a migração de dados que já tenho em planilhas ou outro software?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nossa plataforma possui assistentes de importação automática para arquivos CSV e planilhas Excel, além de integrações nativas com Google Workspace, Slack, Trello e os principais ERPs do mercado. Para clientes corporativos, nosso time de implantação oferece apoio assistido em todas as etapas da migração.</p>
+                    </div>
+                </div>
+
+                <!-- ITEM 4 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Posso contratar apenas um módulo específico ou preciso contratar toda a suíte?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nossa arquitetura foi desenhada de forma modular. Você pode iniciar utilizando somente a gestão de projetos ou o módulo de RH e ativar novas soluções à medida que seu time expandir, aproveitando os descontos progressivos dos pacotes integrados.</p>
+                    </div>
+                </div>
+
+                <!-- ITEM 5 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Como funciona o suporte técnico e em quais horários atende?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Oferecemos suporte humanizado, em português e com especialistas técnicos reais via chat na própria plataforma, e-mail e canal de emergência. O tempo médio de resposta inicial é menor do que 5 minutos durante o horário comercial, e o monitoramento da estabilidade de infraestrutura opera 24 horas por dia, 7 dias por semana.</p>
+                    </div>
+                </div>
+
+                <!-- ITEM 6 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Existe contrato de fidelidade ou multa rescisória no cancelamento?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não há fidelidade ou taxas de cancelamento para as assinaturas mensais. Você tem total flexibilidade para cancelar ou alterar o plano contratado a qualquer momento com apenas um clique através do painel de administração da sua conta.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 4: SUPORTE & CTA FINAL -->
+        <section class="recursos-cta">
+            <div class="recursos-cta__container">
+                <span class="recursos-cta__label">ATENDIMENTO DEDICADO</span>
+                <h2 class="recursos-cta__title">Não encontrou o que procurava ou precisa de ajuda técnica?</h2>
+                <p class="recursos-cta__text">Nosso time de consultores está pronto para tirar dúvidas sobre arquitetura de dados, planos customizados e rotinas da sua empresa.</p>
+                <div class="recursos-cta__actions">
+                    <button class="btn-primary"><a href="cadastro.html">Falar com Especialista</a></button>
+                    <button class="btn-secondary"><a href="produto.html">Conhecer os Produtos</a></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-container">
+            <p class="footer__title">Acompanhe as nossas oportunidades</p>
+            <p class="footer__text">Seja o primeiro a saber quando novas vagas serão abertas!</p>
+            <div class="footer-social">
+                <a href="#" class="footer-social__icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="footer-social__icon" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="footer-social__icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="footer-social__icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <form class="footer-form">
+                <input type="email" placeholder="Seu e-mail" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <p class="footer__copyright">© 2026 Optimus Tech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../script/navbar.js"></script>
+    <script src="../script/recursos.js"></script>
+</body>
+</html>
+

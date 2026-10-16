@@ -1,27 +1,44 @@
 main{
     display: grid;
-    grid-template-columns: auto 90vw auto;
+    grid-template-columns: minmax(16px, 1fr) minmax(0, 1200px) minmax(16px, 1fr);
     margin-top: 80px;
+    width: 100%;
 }
 
 section{
     margin-top: 50px;
 }
 
+@media screen and (max-width: 768px){
+    main {
+        grid-template-columns: minmax(12px, 1fr) minmax(0, 100%) minmax(12px, 1fr);
+        margin-top: 72px;
+    }
+    section {
+        margin-top: 40px;
+    }
+}
+
 .btn-primary{
-    padding: 10px 9px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
     border-radius: 9px;
     border: none;
     cursor: pointer;
     background-color: var(--cor-primaria);
     transition: background-color 0.2s ease, transform 0.2s ease;
+    text-align: center;
 }
 
 .btn-primary a{
     text-decoration: none;
     color: white;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 500;
+    display: inline-block;
+    width: 100%;
 }
 
 .btn-primary:hover {
@@ -30,36 +47,42 @@ section{
 }
 
 .btn-secondary{
-    padding: 12px 10px;
-    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    border: 1.5px solid rgba(128, 128, 128, 0.35);
     border-radius: 9px;
     cursor: pointer;
-    border: 1px solid rgba(128, 128, 128, 0.336);
     background-color: transparent;
-    transition: border 0.2s ease-in-out, transform 0.2s ease;
+    transition: border-color 0.2s ease-in-out, transform 0.2s ease, background-color 0.2s ease;
+    text-align: center;
 }
 
 .btn-secondary a{
     text-decoration: none;
     color: var(--cor-terciaria);
-    font-size: 0.8rem;
-    font-weight: bold;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
 }
 
 .btn-secondary:hover {
-    border: 1px solid white;
+    border-color: var(--cor-secundario);
     transform: translateY(-1px);
 }
 
 @media screen and (min-width: 768px){
     .btn-secondary{
-        padding: 15px 20px;
+        padding: 14px 24px;
     }
 
     .btn-primary{
-        padding: 15px 40px;
+        padding: 14px 32px;
     }
 }
+
 
 @property --border-angle {
     syntax: "<angle>";

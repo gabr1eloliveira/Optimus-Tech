@@ -7,9 +7,25 @@
     font-family: "Poppins", sans-serif;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+img, picture, video, canvas, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
 :root{
     --cor-primaria: #8e2424;
     --cor-secundario: #101828;
     --cor-terciaria: #667085;
     --cor-fundo: #fdf8f8;
-}
+}

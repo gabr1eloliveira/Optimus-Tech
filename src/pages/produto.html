@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Optimus Tech</title>
+    <link rel="icon" type="image/png" href="../assent/icons/worldwide 1 (Traced).png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/produto.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../assent/icons/worldwide 1 (Traced).png" alt="Logo da Optimus Tech"> Optimus Tech
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-menu__item"><a href="../../index.html">Home</a></li>
+                    <li class="nav-menu__item"><a href="produto.html" class="active">Produtos</a></li>
+                    <li class="nav-menu__item"><a href="recursos.html">Recursos</a></li>
+                    <li class="nav-menu__item"><a href="sobre-nos.html">Sobre Nós</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <button class="btn-secondary"><a href="login.html">Entrar</a></button>
+                <button class="btn-primary"><a href="cadastro.html">Cadastrar</a></button>
+            </div>
+
+            <div class="nav-menu__btn" role="button" tabindex="0" aria-label="Abrir menu" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </div>
+            
+            <ul class="nav-menu__mobile">
+                <li class="nav-menu__item"><a href="../../index.html">Home</a></li>
+                <li class="nav-menu__item"><a href="produto.html" class="active">Produtos</a></li>
+                <li class="nav-menu__item"><a href="recursos.html">Recursos</a></li>
+                <li class="nav-menu__item"><a href="sobre-nos.html">Sobre Nós</a></li>
+                <button class="btn-secondary"><a href="login.html">Entrar</a></button>
+                <button class="btn-primary"><a href="cadastro.html">Cadastrar</a></button>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- INTRO HERO DOS PRODUTOS -->
+        <section class="produto-intro">
+            <div id="produto-intro__container">
+                <span class="produto-intro__label">NOSSOS PRODUTOS</span>
+                <h1 class="produto-intro__title">Soluções para cada etapa do seu negócio</h1>
+                <p class="produto-intro__text">Do gerenciamento de projetos à análise de dados, a OptimusTech oferece um ecossistema completo para empresas que querem crescer com eficiência.</p>
+                <div class="produto-intro__buttons">
+                    <button class="btn-primary"><a href="cadastro.html">Começar Gratuitamente</a></button>
+                    <button class="btn-secondary"><a href="#planos">Ver Planos e Preços ↓</a></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- GRID DE PRODUTOS -->
+        <section id="produtos" class="produtos-section">
+            <div class="produtos-header">
+                <span class="produtos-section__label">NOSSAS SOLUÇÕES</span>
+                <h2 class="produtos-section__title">Uma suíte completa para cada área do seu negócio</h2>
+                <p class="produtos-section__subtitle">Módulos independentes que trabalham em total sincronia para eliminar retrabalho e silos organizacionais.</p>
+            </div>
+
+            <div class="produtos-grid">
+                <!-- PRODUTO 1 -->
+                <article class="produto-card">
+                    <div class="produto-card__header">
+                        <div class="produto-card__icon">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <span class="produto-card__tag">Mais Popular</span>
+                    </div>
+                    <h3 class="produto-card__title">Optimus Projetos</h3>
+                    <p class="produto-card__description">Gestão visual e ágil de demandas com automações poderosas para manter prazos e entregas sempre sob controle.</p>
+                    
+                    <ul class="produto-card__features">
+                        <li><i class="fa-solid fa-circle-check"></i> Quadros Kanban, Listas e Gantt</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Automação de fluxos sem código</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Estimativa de esforço e prazos</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Notificações inteligentes em tempo real</li>
+                    </ul>
+
+                    <div class="produto-card__footer">
+                        <a href="cadastro.html" class="produto-card__btn">Experimentar Módulo →</a>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 2 -->
+                <article class="produto-card">
+                    <div class="produto-card__header">
+                        <div class="produto-card__icon">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <span class="produto-card__tag">Analytics</span>
+                    </div>
+                    <h3 class="produto-card__title">Optimus Analytics</h3>
+                    <p class="produto-card__description">Dashboards dinâmicos e inteligência de negócios para converter dados operacionais em decisões estratégicas.</p>
+                    
+                    <ul class="produto-card__features">
+                        <li><i class="fa-solid fa-circle-check"></i> Indicadores em tempo real (KPIs)</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Modelagem preditiva orientada a IA</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Relatórios executivos automáticos</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Exportação em PDF, CSV e BI externos</li>
+                    </ul>
+
+                    <div class="produto-card__footer">
+                        <a href="cadastro.html" class="produto-card__btn">Experimentar Módulo →</a>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 3 -->
+                <article class="produto-card">
+                    <div class="produto-card__header">
+                        <div class="produto-card__icon">
+                            <i class="fa-solid fa-users-gear"></i>
+                        </div>
+                        <span class="produto-card__tag">RH & Cultura</span>
+                    </div>
+                    <h3 class="produto-card__title">Optimus Talent</h3>
+                    <p class="produto-card__description">Gestão completa do ciclo de vida dos colaboradores: recrutamento, onboarding, metas e avaliações contínuas.</p>
+                    
+                    <ul class="produto-card__features">
+                        <li><i class="fa-solid fa-circle-check"></i> Portal do colaborador self-service</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Avaliações de desempenho e OKRs</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Onboarding 100% digital e rápido</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Gestão de férias, pontos e benefícios</li>
+                    </ul>
+
+                    <div class="produto-card__footer">
+                        <a href="cadastro.html" class="produto-card__btn">Experimentar Módulo →</a>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 4 -->
+                <article class="produto-card">
+                    <div class="produto-card__header">
+                        <div class="produto-card__icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <span class="produto-card__tag">Comunicação</span>
+                    </div>
+                    <h3 class="produto-card__title">Optimus Connect</h3>
+                    <p class="produto-card__description">Comunicação centralizada, segura e rápida para equipes remotas e híbridas, mantendo conversas em contexto.</p>
+                    
+                    <ul class="produto-card__features">
+                        <li><i class="fa-solid fa-circle-check"></i> Canais abertos, privados e tópicos</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Videoconferências em HD criptografadas</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Compartilhamento de arquivos integrado</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Histórico unificado e busca avançada</li>
+                    </ul>
+
+                    <div class="produto-card__footer">
+                        <a href="cadastro.html" class="produto-card__btn">Experimentar Módulo →</a>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 5 -->
+                <article class="produto-card">
+                    <div class="produto-card__header">
+                        <div class="produto-card__icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <span class="produto-card__tag">Integrações</span>
+                    </div>
+                    <h3 class="produto-card__title">Optimus Automate</h3>
+                    <p class="produto-card__description">Conecte seu ecossistema sem complicação com centenas de aplicativos nativos, APIs velozes e webhooks.</p>
+                    
+                    <ul class="produto-card__features">
+                        <li><i class="fa-solid fa-circle-check"></i> +120 integrações prontas para uso</li>
+                        <li><i class="fa-solid fa-circle-check"></i> API RESTful completa e documentada</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Disparadores com base em eventos</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Conexão com WhatsApp, Slack e ERPs</li>
+                    </ul>
+
+                    <div class="produto-card__footer">
+                        <a href="cadastro.html" class="produto-card__btn">Experimentar Módulo →</a>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 6 -->
+                <article class="produto-card">
+                    <div class="produto-card__header">
+                        <div class="produto-card__icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <span class="produto-card__tag">Enterprise</span>
+                    </div>
+                    <h3 class="produto-card__title">Optimus Security</h3>
+                    <p class="produto-card__description">Proteção de nível bancário para os ativos mais valiosos da sua corporação com total conformidade com a LGPD.</p>
+                    
+                    <ul class="produto-card__features">
+                        <li><i class="fa-solid fa-circle-check"></i> Criptografia AES-256 e TLS 1.3</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Controle de acessos baseado em função (RBAC)</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Trilha de auditoria e logs detalhados</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Backups automáticos geo-redundantes</li>
+                    </ul>
+
+                    <div class="produto-card__footer">
+                        <a href="cadastro.html" class="produto-card__btn">Experimentar Módulo →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- DIFERENCIAIS DA PLATAFORMA -->
+        <section id="diferenciais" class="diferenciais-section">
+            <div class="diferenciais-header">
+                <span class="diferenciais-label">POR QUE A OPTIMUS TECH?</span>
+                <h2 class="diferenciais-title">Construído com obsessão pela melhor experiência</h2>
+                <p class="diferenciais-subtitle">Eliminamos as barreiras dos softwares tradicionais para entregar velocidade, beleza e robustez técnica.</p>
+            </div>
+
+            <div class="diferenciais-grid">
+                <div class="diferencial-item">
+                    <div class="diferencial-item__icon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h4 class="diferencial-item__title">Implantação Rápida</h4>
+                    <p class="diferencial-item__text">Configure sua organização em poucos minutos com importadores intuitivos e templates prontos para o seu setor.</p>
+                </div>
+
+                <div class="diferencial-item">
+                    <div class="diferencial-item__icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h4 class="diferencial-item__title">Suporte 100% Brasileiro</h4>
+                    <p class="diferencial-item__text">Atendimento humanizado em português por especialistas reais, com tempo médio de primeira resposta inferior a 5 minutos.</p>
+                </div>
+
+                <div class="diferencial-item">
+                    <div class="diferencial-item__icon">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </div>
+                    <h4 class="diferencial-item__title">99.98% de Uptime</h4>
+                    <p class="diferencial-item__text">Infraestrutura em nuvem elástica e resiliente que garante que sua operação nunca pare, mesmo em picos de demanda.</p>
+                </div>
+
+                <div class="diferencial-item">
+                    <div class="diferencial-item__icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <h4 class="diferencial-item__title">Conformidade LGPD</h4>
+                    <p class="diferencial-item__text">Seus dados tratados com rigor ético e legal, armazenamento nacional e transparência completa sobre privacidade.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE PLANOS E PRECIFICAÇÃO -->
+        <section id="planos" class="planos-section">
+            <div class="planos-header">
+                <span class="planos-label">PREÇOS TRANSPARENTES</span>
+                <h2 class="planos-title">Escolha o plano ideal para a escala da sua empresa</h2>
+                <p class="planos-subtitle">Sem surpresas na fatura. Troque de plano ou cancele quando quiser.</p>
+            </div>
+
+            <div class="planos-grid">
+                <!-- PLANO STARTER -->
+                <div class="plano-card">
+                    <div class="plano-card__header">
+                        <span class="plano-card__badge">Iniciante</span>
+                        <h3 class="plano-card__name">Starter</h3>
+                        <p class="plano-card__desc">Ideal para pequenas equipes que buscam organizar seus fluxos básicos.</p>
+                        <div class="plano-card__price">
+                            <span class="price-currency">R$</span>
+                            <span class="price-value">0</span>
+                            <span class="price-period">/mês para sempre</span>
+                        </div>
+                    </div>
+                    <ul class="plano-card__features">
+                        <li><i class="fa-solid fa-check"></i> Até 5 usuários ativos</li>
+                        <li><i class="fa-solid fa-check"></i> Gestão de tarefas Kanban</li>
+                        <li><i class="fa-solid fa-check"></i> 5 GB de armazenamento em nuvem</li>
+                        <li><i class="fa-solid fa-check"></i> Suporte pela comunidade</li>
+                    </ul>
+                    <a href="cadastro.html" class="plano-card__btn btn-outline">Começar Grátis</a>
+                </div>
+
+                <!-- PLANO PRO (DESTAQUE) -->
+                <div class="plano-card plano-card--featured">
+                    <div class="plano-card__highlight">Mais Escolhido</div>
+                    <div class="plano-card__header">
+                        <span class="plano-card__badge">Empresas em Crescimento</span>
+                        <h3 class="plano-card__name">Business Pro</h3>
+                        <p class="plano-card__desc">Para empresas que precisam de automações avançadas e inteligência de dados.</p>
+                        <div class="plano-card__price">
+                            <span class="price-currency">R$</span>
+                            <span class="price-value">59</span>
+                            <span class="price-period">/usuário ao mês</span>
+                        </div>
+                    </div>
+                    <ul class="plano-card__features">
+                        <li><i class="fa-solid fa-check"></i> Usuários ilimitados</li>
+                        <li><i class="fa-solid fa-check"></i> Módulos de Projetos, Analytics e RH</li>
+                        <li><i class="fa-solid fa-check"></i> Automações sem limite de execuções</li>
+                        <li><i class="fa-solid fa-check"></i> 250 GB de armazenamento</li>
+                        <li><i class="fa-solid fa-check"></i> Suporte prioritário via chat e e-mail</li>
+                    </ul>
+                    <a href="cadastro.html" class="plano-card__btn btn-filled">Testar por 14 Dias Grátis</a>
+                </div>
+
+                <!-- PLANO ENTERPRISE -->
+                <div class="plano-card">
+                    <div class="plano-card__header">
+                        <span class="plano-card__badge">Corporativo</span>
+                        <h3 class="plano-card__name">Enterprise</h3>
+                        <p class="plano-card__desc">Segurança customizada, governança corporativa e SLA contratual garantido.</p>
+                        <div class="plano-card__price">
+                            <span class="price-custom">Sob Consulta</span>
+                            <span class="price-period">Faturamento anual flexível</span>
+                        </div>
+                    </div>
+                    <ul class="plano-card__features">
+                        <li><i class="fa-solid fa-check"></i> Tudo do plano Business Pro</li>
+                        <li><i class="fa-solid fa-check"></i> Gerente de sucesso dedicado</li>
+                        <li><i class="fa-solid fa-check"></i> Single Sign-On (SSO / SAML 2.0)</li>
+                        <li><i class="fa-solid fa-check"></i> Armazenamento ilimitado</li>
+                        <li><i class="fa-solid fa-check"></i> SLA de 99.98% e auditoria LGPD</li>
+                    </ul>
+                    <a href="cadastro.html" class="plano-card__btn btn-outline">Falar com Consultor</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="produto-cta">
+            <div class="produto-cta__container">
+                <span class="produto-cta__label">EXPERIÊNCIA COMPLETA</span>
+                <h2 class="produto-cta__title">Pronto para transformar o dia a dia da sua equipe?</h2>
+                <p class="produto-cta__text">Junte-se a mais de 500 empresas inovadoras no Brasil que já utilizam a Optimus Tech para crescer de forma sustentável e organizada.</p>
+                <div class="produto-cta__actions">
+                    <button class="btn-primary"><a href="cadastro.html">Criar Conta Gratuitamente</a></button>
+                    <button class="btn-secondary"><a href="login.html">Já sou cliente</a></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-container">
+            <p class="footer__title">Acompanhe as nossas oportunidades</p>
+            <p class="footer__text">Seja o primeiro a saber quando novas vagas serão abertas!</p>
+            <div class="footer-social">
+                <a href="#" class="footer-social__icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="footer-social__icon" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="footer-social__icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="footer-social__icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <form class="footer-form">
+                <input type="email" placeholder="Seu e-mail" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <p class="footer__copyright">© 2026 Optimus Tech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../script/navbar.js"></script>
+</body>
+</html>
+
