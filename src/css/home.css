@@ -49,7 +49,7 @@
   max-width: 100%;
 }
 
-.home-into__title{
+.home-into__title{  
   color: white;
   font-size: clamp(1.65rem, 5vw, 2.5rem);
   line-height: 1.25;

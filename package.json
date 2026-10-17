@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "animejs": "^4.5.0"
+  },
+  "name": "optimus-tech",
+  "version": "1.0.0",
+  "description": "https://gabr1eloliveira.github.io/Optimus-Tech/",
+  "main": "index.js",
+  "devDependencies": {
+    "vite": "^8.3.4"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabr1eloliveira/Optimus-Tech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gabr1eloliveira/Optimus-Tech/issues"
+  },
+  "homepage": "https://github.com/gabr1eloliveira/Optimus-Tech#readme"
+}
