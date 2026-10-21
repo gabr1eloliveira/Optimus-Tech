@@ -1,19 +1,22 @@
 /*HOME*/
-#home-into{
+#home-into{ 
   grid-column: 1/4;
+  margin-top: 0;
   background-image: url(../assent/imagens/background-home.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 0;
   padding: 40px 16px;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
 }
 
 #home-into__container{
+
   display: flex;
   flex-direction: column;
   gap: 18px;
-  min-height: 320px;
   text-align: left;
   max-width: 550px;
   margin-left: 0;
@@ -213,8 +216,8 @@
 }
 
 .nossa-missao__img {
-  width: 100%;
-  height: auto;
+  width: 0%;
+  height: 300px;
   border-radius: 10px;
   object-fit: cover;
 }
