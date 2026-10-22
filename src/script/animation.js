@@ -29,9 +29,9 @@ animate('.como-funciona__item',{
 animate(".nossa-missao__img", {
     width: "100%",
     ease: "outQuad",
-        autoplay: onScroll({
+    autoplay: onScroll({
         target: ".nossa-missao",
         enter: "top -90%",
-        })
+    })
 });
 
