@@ -22,7 +22,7 @@ animate('.como-funciona__item',{
     ease: 'outQuad',
     autoplay: onScroll({
         target: "#como-funciona",
-        enter: "top -100%",
+        enter: "top -90%",
     })
 })
 
@@ -31,7 +31,7 @@ animate(".nossa-missao__img", {
     ease: "outQuad",
         autoplay: onScroll({
         target: ".nossa-missao",
-        enter: "top -100%",
+        enter: "top -90%",
         })
 });
 
