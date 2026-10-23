@@ -17,7 +17,7 @@
   letter-spacing: 1px;
 }
 
-.about-intro__title{
+#about-intro__title{
   font-size: clamp(1.6rem, 5vw, 2.4rem);
   color: var(--cor-secundario);
   line-height: 1.25;
@@ -283,3 +283,293 @@
   font-size: 0.85rem;
 }
 
+.navbar{
+  background: #ffffff;
+  color: var(--cor-secundario);
+  box-shadow: 0 1px 0 rgba(16, 24, 40, 0.08);
+}
+
+.about-intro{
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  min-height: 650px;
+  margin-top: 0;
+  padding: 130px max(7vw, calc((100vw - 1200px) / 2)) 88px;
+  color: #ffffff;
+  background: #101828;
+}
+
+#about-intro__container{
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(40px, 8vw, 110px);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-intro__content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+#about-intro__title{
+  color: #ffffff;
+  font-size: clamp(3rem, 5.6vw, 5.2rem);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+}
+
+.about-intro__text{
+  max-width: 48ch;
+  margin: 0;
+  color: #c8ced8;
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+  line-height: 1.75;
+}
+
+.about-intro__visual{
+  position: relative;
+  justify-self: end;
+  width: 100%;
+  max-width: 620px;
+}
+
+.about-intro__visual::before{
+  position: absolute;
+  inset: 18px -18px -18px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 18px;
+  content: "";
+}
+
+.about-intro__visual img{
+  position: relative;
+  width: 100%;
+  min-height: 340px;
+  max-height: 460px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+#metrica,
+#vagas,
+#depoimento{
+  grid-column: 1 / 4;
+  padding: clamp(72px, 9vw, 120px) max(7vw, calc((100vw - 1200px) / 2));
+  margin-top: 0;
+}
+
+#metrica{
+  background: #f5f1ec;
+}
+
+#metrica-container,
+#talentos,
+#vagas-abertas,
+#depoimento-container{
+  width: min(100%, 1200px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#metrica-container{
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.metrica__item{
+  grid-column: span 3;
+  min-height: 210px;
+  justify-content: center;
+  padding: 28px 22px;
+  border: 1px solid rgba(16, 24, 40, 0.1);
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.metrica__item:nth-child(2){
+  margin-top: 32px;
+}
+
+.metrica__item:nth-child(3){
+  margin-top: 64px;
+}
+
+.metrica__item:nth-child(4){
+  margin-top: 18px;
+}
+
+.metrica__number{
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 800;
+}
+
+.metrica__title{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.metrica__description{
+  color: #475467;
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+#vagas{
+  background: #ffffff;
+}
+
+#talentos{
+  text-align: left;
+}
+
+.talento__title{
+  max-width: 14ch;
+  font-size: clamp(2.6rem, 4.5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.talento__text{
+  color: #475467;
+  font-size: 1.05rem;
+}
+
+#talentos img{
+  width: 100%;
+  max-width: none;
+  height: 420px;
+  margin: 36px 0 0;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+#vagas-abertas{
+  margin-top: 48px;
+}
+
+.areas-vagas{
+  padding: 26px;
+  background: #f5f1ec;
+  border-radius: 16px;
+}
+
+.area-vagas__title{
+  font-size: 1.5rem;
+}
+
+.vagas-item{
+  min-height: 90px;
+}
+
+.vagas__nome{
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.vagas__description{
+  color: #475467;
+  font-size: 0.95rem;
+}
+
+#depoimento{
+  align-items: flex-start;
+  background: #101828;
+  border: 0;
+  border-radius: 0;
+  text-align: left;
+}
+
+#depoimento-container{
+  align-items: flex-start;
+  max-width: 900px;
+  gap: 20px;
+  text-align: left;
+}
+
+.depoimento__title{
+  color: #ffffff;
+  font-size: clamp(1.7rem, 3.2vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+}
+
+.depoimento__nome{
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.depoimento__cargo{
+  color: #c8ced8;
+  font-size: 0.95rem;
+}
+
+@media screen and (max-width: 900px){
+  .about-intro,
+  #metrica,
+  #vagas,
+  #depoimento{
+    padding-right: 6vw;
+    padding-left: 6vw;
+  }
+
+  .metrica__item,
+  .metrica__item:nth-child(n){
+    grid-column: span 6;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .about-intro{
+    min-height: 0;
+    padding: 116px 24px 72px;
+  }
+
+  #about-intro__container{
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  #about-intro__title{
+    font-size: clamp(2.8rem, 12vw, 4.2rem);
+  }
+
+  .about-intro__visual{
+    width: calc(100% - 18px);
+    justify-self: start;
+  }
+
+  .about-intro__visual img{
+    min-height: 0;
+    aspect-ratio: 1.3;
+  }
+
+  #metrica,
+  #vagas,
+  #depoimento{
+    padding: 76px 24px;
+  }
+
+  .metrica__item,
+  .metrica__item:nth-child(n){
+    grid-column: 1 / -1;
+    margin-top: 0;
+  }
+
+  #talentos img{
+    height: auto;
+    aspect-ratio: 1.3;
+  }
+}
