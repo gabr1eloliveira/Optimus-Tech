@@ -1,19 +1,20 @@
 .navbar {
 	width: 100%;
-    min-height: 80px;
+    height: 80px;
     padding: 16px 40px;
 	position: fixed;
 	top: 0;
 	z-index: 5;
 	background-color: transparent;
 	color: white;
-	transition: background 0.3s, color 0.3s;
+	transition: background 0.3s, color 0.3s, height 0.3s;
 }
 
 .navbar.scrolled{
 	background: white;
   	backdrop-filter: blur(10px);
 	color: black;
+	height: 78px;
 }
 
 .nav-container {
