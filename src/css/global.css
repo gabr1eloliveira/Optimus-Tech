@@ -41,7 +41,7 @@ section{
 }
 
 .btn-primary:hover {
-    background-color: var(--cor-secundario);
+    background-color: rgba(248, 82, 82, 0.74);
     transform: translateY(-1px);
 }
 
@@ -68,7 +68,7 @@ section{
 }
 
 .btn-secondary:hover {
-    border-color: var(--cor-secundario);
+    border-color: white;
     transform: translateY(-1px);
 }
 

@@ -34,7 +34,7 @@
     text-align: center;
     gap: 16px;
     max-width: 820px;
-    margin: 0 auto;
+    margin: 0 ;
 }
 
 .produto-intro__label {
@@ -76,7 +76,7 @@
 }
 
 .produto-intro__buttons .btn-secondary a {
-    color: var(--cor-secundario);
+    color: var(--cor-terciaria);
 }
 
 /* ========================================================
