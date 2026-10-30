@@ -8,3 +8,4 @@ animate(".home-into__img, .home-into__title, .home-into__text, #home-into__butto
     opacity: [0, 1],
     ease: "outQuad"
 })
+
