@@ -5,7 +5,7 @@
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   align-items: center;
   gap: clamp(40px, 7vw, 100px);
-  min-height: min(760px, 100vh);
+  min-height: min(790px, 100vh);
   margin-top: 0;
   padding: 140px max(7vw, calc((100vw - 1200px) / 2)) 80px;
   overflow: hidden;
