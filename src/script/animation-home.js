@@ -3,7 +3,7 @@ import {animate, onScroll, stagger} from "animejs"
 
 //HOME
 animate(".home-into__img, .home-into__title, .home-into__text, #home-into__buttons", {
-    translateX: 60,
+    translateX: 20,
     duration: 1000,
     opacity: [0, 1],
     ease: "outQuad",
@@ -82,7 +82,7 @@ animate("#nossa-missao-img",{
     opacity: [0, 1],
     clipPath: [
         // Começa escondida
-        { to: 'inset(0 98% 0% 0)', duration: 0 },
+        { to: 'inset(0 98% 0% 0)', duration: 100 },
 
         // Revela um filete na esquerda
         { from: 'inset(0 98% 98% 0)', duration: 1000, ease: 'outExpo' },
